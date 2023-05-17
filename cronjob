@@ -1,0 +1,19 @@
+Schedule cron job for the below timings.
+Exercise Crontab Entries : 
+1) April 5th Midnight
+0 0 5 4 * /root/scripts/test.sh
+
+2) 5 th of Every November,Jan,June if it is a Thursday.
+0 0 5 1,6,11 4 /root/scripts/test.sh
+
+3) At 05 and 27th minutes of 9,10,11 hours everyday. 
+05,27 9,10,11 * * * /root/scripts/test.sh
+
+4) 15th second of 34 min. of 9th hour on 15th Aug.
+34 9 15 8 * sleep 15; /root/scripts/test.sh
+
+5) Every midnight
+0 0 * * * /root/scripts/test.sh
+
+6) Every Weekend ( Saturday night 11.59 )
+59 23 * * sat /root/scripts/test.sh
